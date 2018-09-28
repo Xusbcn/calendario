@@ -6,23 +6,34 @@
  <
 </head>
 <body>
-<h1>CALENDARIO</h1>
+<h1>CALENDARI</h1>
+
+<table>
+	<tr>
+		<td>Dilluns</td>
+		<td>Dimarts</td>
+		<td>Dimecres</td>
+		<td>Dijous</td>
+		<td>Divedres</td>
+		<td>Disabte</td>
+		<td>Diumenge</td>
+	</tr>
 	<?php
-
-
-		echo "<table border=1 width=294>";
- 		echo "<tr><th colspan=7> calendario semanal </th></tr>";
- 		echo "<tr><td width=42>DOMINGO</td><td width=42>LUNES</td><td 
-     	width=42>MARTES</td><td width=42>MIERCOLES</td><td width=42>JUEVES</td><td 
-     	width=42>VIERNES</td><td width=42>SABADO</td></tr>";
-     	
-     	
-
- 
- 
- 
- ?>
- </tr>
+	$filas=6;
+	$columnas=7;
+	$num=1;
+		for($f=0;$f<$filas;$f++){
+			echo "<tr>";
+			for($c=0;$c<$columnas;$c++){
+				if($num<=31){
+					echo "<td>$num</td>";
+					$num+=1;
+				}
+			}
+			echo "</tr>";
+		}
+	?>
+</table>
      
 </body>
 </html>
