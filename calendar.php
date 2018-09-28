@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>my calendar</title>
 
  <
 </head>
 <body>
 <h1>CALENDARI</h1>
-
+<link rel="stylesheet" type="text/css" href="calendar.css" />
 <table>
 	<tr>
 		<td>Dilluns</td>
